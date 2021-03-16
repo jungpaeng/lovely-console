@@ -29,4 +29,8 @@ const defaultStyle = {
 
 const braceRegex = /\{(.*?)\}/;
 
-export const defaultStyleString = JSON.stringify(defaultStyle).match(braceRegex)![1];
+export function removeBrace(str: string) {
+  return str.match(braceRegex)![1].replaceAll('"', '').replaceAll(',', ';');
+}
+
+export const defaultStyleString = removeBrace(JSON.stringify(defaultStyle));
