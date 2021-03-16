@@ -1,5 +1,5 @@
 <h1 align=center style="max-width: 100%;">
-  <img alt="colorful-console Logo" src="https://user-images.githubusercontent.com/26024412/111288299-62ba1000-8687-11eb-811f-1f945981cbac.png"><br />
+  <img alt="lovely-console Logo" src="https://user-images.githubusercontent.com/26024412/111292316-6b144a00-868b-11eb-9bee-225d89612a1f.png"><br />
 </h1>
 
 ## ⚙ Installation
@@ -7,19 +7,19 @@
 #### npm
 
 ```bash
-$ npm install --save colorful-console
+$ npm install --save lovely-console
 ```
 
 #### yarn
 
 ```bash
-$ yarn add colorful-console
+$ yarn add lovely-console
 ```
 
 ## 🏃 Quick Start
 
 ```js
-colorfulConsole(
+lovelyConsole(
   [
     { msg: 'text', style: 'background: cyan; font-size: 10px;' },
     { msg: 'text2', style: 'background: tomato; font-size: 20px;' },
@@ -28,7 +28,7 @@ colorfulConsole(
 ```
 
 ```js
-colorfulConsole(
+lovelyConsole(
   [
     { msg: 'text', style: { background: 'cyan', 'font-size': '10px' } },
     { msg: 'text2', style: { background: 'tomato', 'font-size': '20px' } },
@@ -41,15 +41,15 @@ colorfulConsole(
 ### Default arguments
 
 ```ts
-function colorfulConsole(messages: Message[], key?: keyof Console); // default key is 'log'
+function lovelyConsole(messages: Message[], key?: keyof Console); // default key is 'log'
 ```
 
 ### console function
 
 ```js
-colorfulConsole([...],'log'); // console.log, default
-colorfulConsole([...],'error'); // console.error
-colorfulConsole([...],'debug'); // console.debug
+lovelyConsole([...],'log'); // console.log, default
+lovelyConsole([...],'error'); // console.error
+lovelyConsole([...],'debug'); // console.debug
 ...
 ```
 
