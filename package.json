@@ -1,6 +1,6 @@
 {
   "name": "lovely-console",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "lovely console",
   "main": "index.cjs.js",
   "module": "index.js",
