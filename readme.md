@@ -1,5 +1,5 @@
-<h1 align=center style="max-width: 100%;">
-  <img alt="lovely-console Logo" src="https://user-images.githubusercontent.com/26024412/111292316-6b144a00-868b-11eb-9bee-225d89612a1f.png"><br />
+<h1 align=center style="text-align:center;">
+  <img style="max-width: 50%" alt="lovely-console Logo" src="https://user-images.githubusercontent.com/26024412/111449123-70889780-8752-11eb-9d45-fbe6d37dfa39.png"><br />
 </h1>
 
 ## ⚙ Installation
@@ -21,19 +21,19 @@ $ yarn add lovely-console
 ```js
 lovelyConsole(
   [
-    { msg: 'text', style: 'background: cyan; font-size: 10px;' },
+    { msg: 'text' },
     { msg: 'text2', style: 'background: tomato; font-size: 20px;' },
   ],
 );
 ```
 
 ```js
-lovelyConsole(
-  [
-    { msg: 'text', style: { background: 'cyan', 'font-size': '10px' } },
-    { msg: 'text2', style: { background: 'tomato', 'font-size': '20px' } },
-  ],
-);
+const styledConsole = makeStyledConsole({
+  background: 'tomato',
+  'font-size': '20px',
+});
+
+styledConsole('text');
 ```
 
 ## 🍳 Recipes
