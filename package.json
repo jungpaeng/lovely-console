@@ -44,5 +44,5 @@
     "rollup-plugin-typescript2": "^0.30.0",
     "typescript": "^4.2.3"
   },
-  "keywords": []
+  "keywords": ["web", "frontend", "front-end", "pretty", "lovely", "console", "style"]
 }
