@@ -21,19 +21,19 @@ $ yarn add lovely-console
 ```js
 lovelyConsole(
   [
-    { msg: 'text', style: 'background: cyan; font-size: 10px;' },
+    { msg: 'text' },
     { msg: 'text2', style: 'background: tomato; font-size: 20px;' },
   ],
 );
 ```
 
 ```js
-lovelyConsole(
-  [
-    { msg: 'text', style: { background: 'cyan', 'font-size': '10px' } },
-    { msg: 'text2', style: { background: 'tomato', 'font-size': '20px' } },
-  ],
-);
+const styledConsole = makeStyledConsole({
+  background: 'tomato',
+  'font-size': '20px',
+});
+
+styledConsole('text');
 ```
 
 ## 🍳 Recipes
